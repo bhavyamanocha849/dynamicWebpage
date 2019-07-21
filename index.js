@@ -64,5 +64,7 @@ var server = http.createServer(function(req, res) {
     res.end("Error 404 Page not found");
   }
 });
+var port =process.env.PORT||80;
 server.listen(3000);
+
 console.log("Server is listening at port 3000");
